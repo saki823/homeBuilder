@@ -673,6 +673,7 @@ nav ul li a .arrow_01 .arrow02{
 	margin:0 7% 0 0 ;
 	position: relative;
 	top:48.2vw;
+	left: 0;
 	height:48.2vw;
 	animation-duration: 1.4s;
   animation-name: slide_in;

@@ -369,13 +369,6 @@
 		height: 52vw;
 	}
 
-	.mask.anim{
-		top: 52vw;
-		height: 52vw;
-		margin: 0;
-		overflow: hidden;
-	}
-
 	/*.sec_img*/
 	@keyframes slidein {
 	  from {
@@ -389,7 +382,15 @@
 	  }
 	} 
 
-	/*.mask*/
+	.mask.anim{
+		top: 52vw;
+		left: 0;
+		height: 52vw;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	/*.mask！！！！動いてる最中にぴょこんと外へ出る！！！！*/
 	@keyframes slide_in {
 	  0% {
 	    width: 0;
