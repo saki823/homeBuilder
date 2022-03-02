@@ -1,5 +1,3 @@
-
-
 $(function(){
     $(window).scroll(function (){
         $('.fadein').each(function(){
@@ -13,16 +11,13 @@ $(function(){
     });
 });
 
-/*
-スクロール出現
-*/
-// スクロール出現用関数（.offs ⇄ .ons）
+
 function scr_ani(scr,offs_max){
   var
   window_h = $(window).height(),
   offs_length = $('.offs').filter(':visible').length,
   ons_length = $('.ons').filter(':visible').length,
-  wh_pos = 15;// 対象コンテンツの上端が画面下からどれくらい入ったら反応するか。画面高さに対する割合（%）
+  wh_pos = 15;
   if(offs_length){
     var first_item = offs_max - offs_length;
     for (var i=0; i<offs_length; i++) {
@@ -55,7 +50,6 @@ function scr_ani(scr,offs_max){
 
 $(function(){
 
-  // スクロール出現アイテムにナンバリング（hide要素には適用されません）
   var cnt = 0;
   for (var i=0; i<$('.offs').length; i++) {
     if($('.offs').eq(i).is(':visible')){
@@ -63,13 +57,11 @@ $(function(){
       cnt++;
     }
   }
-  // 対象要素の個数
+
   var offs_max = $('.offs').filter(':visible').length;
 
-  // （リロード時など）ロード時にすでにスクロールされている場合に対応
   var scr = $(window).scrollTop();
   scr_ani(scr,offs_max);
-
 
   /************
   スクロール時

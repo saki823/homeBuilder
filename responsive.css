@@ -15,6 +15,7 @@
 			background-color: green;
 		}	
 	*/
+
 	.br::before {
 		content: "\A" ;
 		white-space: pre ;
@@ -71,6 +72,10 @@
 
 	header ul li a.arrow_02::before{
 		left:10%;
+	}
+
+	header ul li:nth-child(1) a.arrow_02::before{
+		left: 8px;
 	}
 
 	header ul li:nth-child(3) a.arrow_02::before{
@@ -357,45 +362,48 @@
 	.sec_img.anim,
 	.mask.anim{
 		animation-delay: .5s;
+		animation-duration: 2s;
 	}
 
-	/*.sec_img animation終盤でimgが拡大される？縦横比率の問題か？*/
+	.sec_img.anim{
+		height: 52vw;
+	}
+
+	.mask.anim{
+		top: 52vw;
+		height: 52vw;
+		margin: 0;
+	}
 
 	/*.sec_img*/
 	@keyframes slidein {
 	  from {
 	    margin-right: 100%;
 	    width: 0;
-	    height:48.2vw;
 	  }
 
 	  to {
 	    margin-right: 0;
 	    width: 100%;
-	    height:48.2vw;
 	  }
 	} 
 
-
-	/*.mask ！！！なんかおかしいので調整要！！！*/
 	@keyframes slide_in {
 	  0% {
-	    left: 0;
 	    width: 0;
+	    margin-right: 100%;
 	  }
 
-	  40%{
-	  	width:0;
-	  	right: 0;
+	  30%{
+	  	width: 100%;
+	  	margin: 0;
 	  }
 
 	  100% {
-	    right: 0;
 	    width: 0;
+	    margin-left: 100vw;
 	  }
 	}
-
-
 
 	#pet .section_txt,
 	#garage .section_txt,
@@ -436,7 +444,7 @@
 		line-height: 26px;
 		text-align: left;
 		font-weight: 500;
-		width: 100%;
+		width: 99%;
 		margin:10px auto auto 1%;
 	}
 
@@ -458,6 +466,19 @@
 
 	.img_box div img{
 		width: 100%;
+	}
+
+	.img_box > div.ons h4.fadeIn_item,
+	.img_box > div.ons p.fadeIn_item{
+		transition: 1.6s cubic-bezier(0, 0, 0.13, 0.79);
+	}
+
+	.img_box > div.ons h4.fadeIn_item{
+		transition-delay: .8s;
+	}
+
+	.img_box > div.ons p.fadeIn_item{
+		transition-delay: 1s;
 	}
 
 	#pet .img_box h4,
@@ -572,5 +593,4 @@
 	    background-color: #0e0e0e;
 	}
 
-	/*右に10px程度余白ができる！*/
 }

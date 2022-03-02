@@ -41,13 +41,13 @@ a{
 button{
 	cursor: pointer;
 	-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .arrow_01 {
-  	position: relative;
-  	width: 100px;
+  position: relative;
+  width: 100px;
 }
 .arrow01 {
 	height: 1px;
@@ -55,13 +55,13 @@ button{
 }
 .arrow02 {
  	position: absolute;
-  	top: 0;
-  	right: 0;
-  	transform-origin: right bottom;
-  	width: 10px;
-  	height: 1px;
-  	transform: rotate(45deg);
-   	background-color: #0e0e0e;
+ 	top: 0;
+  right: 0;
+  transform-origin: right bottom;
+  width: 10px;
+  height: 1px;
+  transform: rotate(45deg);
+  background-color: #0e0e0e;
 }
 
 header {
@@ -69,7 +69,6 @@ header {
 	width:100%;
 	background-color: #fefefe;
 	z-index: 999;
-	
 	position: fixed;
 }
 
@@ -96,7 +95,7 @@ header h1,
 #headerinner.offs h1.fadeIn_item,
 #headerinner.offs ul li.fadeIn_item{
 	opacity: 0;
-    transform: translateY(-60px);
+  transform: translateY(-60px);
 }
 
 #headerinner.ons h1.fadeIn_item,
@@ -148,8 +147,8 @@ header ul li a:hover{
 
 .arrow_02{
 	position: relative;
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 header ul li:nth-child(2) .arrow_02::before{
@@ -163,18 +162,18 @@ header ul li:nth-child(3) .arrow_02::before{
 
 .arrow_02::before{
 	position: absolute;
-    top: 1px;
-    bottom: 0;
-    right:144px;
-    width: 5px;
-    height: 5px;
-    border-top: 1px solid #0e0e0e;
-    border-right: 1px solid #0e0e0e;
-    -webkit-transform: rotate(45deg);
-   transform: rotate(45deg);
-    margin:auto;
-    content: "";
-    vertical-align: middle;
+  top: 1px;
+  bottom: 0;
+  right:144px;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #0e0e0e;
+  border-right: 1px solid #0e0e0e;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin:auto;
+  content: "";
+  vertical-align: middle;
 }
 
 header ul li a:hover.arrow_02::before{
@@ -208,7 +207,6 @@ header ul li a:hover.arrow_02::before{
 
 #mainvisual > div:nth-child(1) img{
 	width:100%;
-
 }
 
 #mainvisual > div:nth-child(1) img:nth-child(1){
@@ -253,8 +251,6 @@ header ul li a:hover.arrow_02::before{
 	display: flex;
 	justify-content: space-between;
 }
-
-
 
 #mainvisual > div:nth-child(2) div:nth-child(1) img:nth-child(1),
 #mainvisual > div:nth-child(2) div:nth-child(3) img:nth-child(1){
@@ -306,12 +302,11 @@ header ul li a:hover.arrow_02::before{
 	transition: .3s cubic-bezier(0, 0, 0.13, 0.79);
 	transition-delay: 1s;
 }
+
 #mainvisual.offs > div:nth-child(2) div:nth-child(2) p:nth-child(1).fadeIn_item,
 #mainvisual.offs > div:nth-child(2) div:nth-child(2) p:nth-child(2).fadeIn_item{
 	transform: translateY(50px);
 }
-
- 
 
 #mainvisual > div:nth-child(2) div:nth-child(3) img:nth-child(1){
 	transition-delay: .8s;
@@ -564,7 +559,6 @@ nav ul.ons li.fadeIn_item{
     transition: .8s cubic-bezier(0, 0, 0.13, 0.79);
 }
 
-
 #list_pet{
 	transition-delay: .2s;
 }
@@ -647,7 +641,6 @@ nav ul li a .arrow_01 .arrow02{
 }
 
 .sec_img{
-	height:48.2vw;
 	opacity: 0;
 }
 
@@ -658,21 +651,19 @@ nav ul li a .arrow_01 .arrow02{
     object-position: left;
     object-fit: cover;
     opacity: 1;
-    animation-delay: 2s;
+    animation-delay: 1s;
+    height:48.2vw;
 }
 
 @keyframes slidein {
   from {
     margin-right: 100%;
     width: 0;
-    height:48.2vw;
-
   }
 
   to {
     margin-right: 7%;
     width: 93%;
-    height:48.2vw;
   }
 }
 
@@ -684,10 +675,10 @@ nav ul li a .arrow_01 .arrow02{
 	top:48.2vw;
 	height:48.2vw;
 	animation-duration: 1.4s;
-    animation-name: slide_in;
-    max-width: 1350px;
-    animation-timing-function:linear;
-    animation-delay: 2s;
+  animation-name: slide_in;
+  max-width: 1350px;
+  animation-timing-function:linear;
+  animation-delay: 1s;
 }
 
 @keyframes slide_in {
@@ -1102,57 +1093,57 @@ footer > p{
 }
 
 #page_top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 
 #page_top .arrow_02 {
-    background-color: #3F3F3F;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    padding: 36px 36px;
-       transition: .2s;
+  background-color: #3F3F3F;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 36px 36px;
+  transition: .2s;
 }
 
 
 #page_top .arrow_02::before{
 	top:7px;
-	 right:0;
-	 left:0;
-    width: 17px;
-    height: 17px;
-    border-top: 4px solid #fefefe;
-    border-right: 4px solid #fefefe;
-    border-radius: 2px;
-    -webkit-transform: rotate(45deg);
-   transform: rotate(-45deg);
-    margin:auto;
-    content: "";
-    vertical-align: middle;
+	right:0;
+	left:0;
+  width: 17px;
+  height: 17px;
+  border-top: 4px solid #fefefe;
+  border-right: 4px solid #fefefe;
+  border-radius: 2px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  margin:auto;
+  content: "";
+  vertical-align: middle;
  
 }
 #page_top .arrow_02:hover {
 	margin-bottom:14px;
-    text-decoration: none;
-    transition: .2s;
+  text-decoration: none;
+  transition: .2s;
 }
 
 .fadein {
-   opacity :0;
-   transform: translateY(20px);
-   transition: all .8s;
+  opacity :0;
+  transform: translateY(20px);
+  transition: all .8s;
 }
 
 .offs .fadeIn_item{
-   opacity: 0;
-   transform: translateY(20px);
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .ons .fadeIn_item{
-   transition: 2.2s cubic-bezier(0, 0, 0.13, 0.79);
-   opacity: 1;
-   transform: translateY(0);
+  transition: 2.2s cubic-bezier(0, 0, 0.13, 0.79);
+  opacity: 1;
+  transform: translateY(0);
 }
 
