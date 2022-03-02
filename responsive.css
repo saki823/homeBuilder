@@ -372,12 +372,10 @@
 	/*.sec_img*/
 	@keyframes slidein {
 	  from {
-	    margin-right: 100%;
 	    width: 0;
 	  }
 
 	  to {
-	    margin-right: 0;
 	    width: 100%;
 	  }
 	} 
@@ -394,23 +392,19 @@
 		max-width: 100vw;
 	}
 
-	/*.mask！！！！動いてる最中にぴょこんと外へ出る！！！！*/
+	/*.mask！！！！スマホの時動いてる最中にぴょこんと外へ出る！！！！*/
 	@keyframes slide_in {
 	  0% {
-	    width: 30%;
-	    margin-right: 70%;
+	   width: 0;
 	  }
 
-	  30%{
+	  50%{
 	  	width: 100%;
-	  	margin-left: auto;
-	  	margin-right: 0;
 	  }
 
 	  100% {
-	    width: 0;
-	    margin-left: auto;
-	    margin-right: 0;
+	   width: 0;
+	   margin-left: auto;
 	  }
 	}
 
