@@ -133,7 +133,7 @@
 
 	#mainvisual > div:nth-child(2) > div:nth-child(2){
 		width: 100%;
-		max-width: none;
+		max-width: 800px;
 		height:100%;
 		max-height: none;
 		display: flex;
@@ -144,7 +144,6 @@
 		max-width: none;
 		font-size: 16vw;
 		margin:5% 0 0 6%;
-		width:50%;
 		transition-delay: .2s;
 	}
 
@@ -154,7 +153,8 @@
 		line-height: 150%;
 		font-weight: 500;
 		letter-spacing: 0.1em;
-		width: 50%;
+		display: inline-block;
+		min-width: 0;
 		margin:auto 0 3% 4% ;
 		height:20%;
 		transition-delay: .4s;
@@ -373,6 +373,7 @@
 		top: 52vw;
 		height: 52vw;
 		margin: 0;
+		overflow: hidden;
 	}
 
 	/*.sec_img*/
@@ -388,6 +389,7 @@
 	  }
 	} 
 
+	/*.mask*/
 	@keyframes slide_in {
 	  0% {
 	    width: 0;
@@ -401,7 +403,7 @@
 
 	  100% {
 	    width: 0;
-	    margin-left: 100vw;
+	    margin-left: 100%;
 	  }
 	}
 
@@ -430,7 +432,8 @@
 		line-height: 110%;
 	}
 
-	.section_txt div h2:nth-child(2){
+	.section_txt div h2:nth-child(2),
+	#garage .section_txt h2:nth-child(2){
 		font-size:20vw;
 		margin:0 auto 0 -6px;
 		line-height: 80%;
