@@ -393,13 +393,14 @@
 	/*.mask！！！！動いてる最中にぴょこんと外へ出る！！！！*/
 	@keyframes slide_in {
 	  0% {
-	    width: 0;
+	    width: 30%;
 	    margin-right: 100%;
 	  }
 
 	  30%{
 	  	width: 100%;
-	  	margin: 0 0 0 auto;
+	  	margin-left: auto;
+	  	margin-right: 0;
 	  }
 
 	  100% {
